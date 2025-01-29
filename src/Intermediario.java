@@ -9,7 +9,7 @@ public class Intermediario {
         this.jugador2 = jugador2;
         this.victoria = victoria;
     }
-
+    public Intermediario() {}
     // Getters y Setters
     public Jugador getJugador1() {
         return jugador1;

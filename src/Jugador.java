@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 
 public class Jugador {
+
     String nombre;
-    int barcosRestantes = 22;
-    ArrayList<Integer> matriz = new ArrayList();
+    int barcosDestruidos = 0;
+    ArrayList<ArrayList<Integer>> campoContrario;
+    ArrayList<ArrayList<Integer>> campoPropio;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
@@ -17,19 +19,27 @@ public class Jugador {
         this.nombre = nombre;
     }
 
-    public int getBarcosRestantes() {
-        return barcosRestantes;
+    public int getBarcosDestruidos() {
+        return barcosDestruidos;
     }
 
-    public void setBarcosRestantes(int barcosRestantes) {
-        this.barcosRestantes = barcosRestantes;
+    public void setBarcosDestruidos(int barcosDestruidos) {
+        this.barcosDestruidos = barcosDestruidos;
     }
 
-    public ArrayList<Integer> getMatriz() {
-        return matriz;
+    public ArrayList<ArrayList<Integer>> getCampoContrario() {
+        return campoContrario;
     }
 
-    public void setMatriz(ArrayList<Integer> matriz) {
-        this.matriz = matriz;
+    public void setCampoContrario(ArrayList<ArrayList<Integer>> campoContrario) {
+        this.campoContrario = campoContrario;
+    }
+
+    public ArrayList<ArrayList<Integer>> getCampoPropio() {
+        return campoPropio;
+    }
+
+    public void setCampoPropio(ArrayList<ArrayList<Integer>> campoPropio) {
+        this.campoPropio = campoPropio;
     }
 }
